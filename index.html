@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <title>Bitcoin Price Checker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+        }
+
+        h1 {
+            margin-bottom: 5px;
+        }
+
+        h3 {
+            margin-top: 0;
+            color: #555;
+            font-weight: normal;
+        }
+
+        .price {
+            font-size: 28px;
+            margin: 20px 0;
+            color: #f7931a;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #f7931a;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e67e00;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h1>Bitcoin Price Checker</h1>
+    <p>Display current BTC price from API</p>
+
+    <div class="price" id="btcPrice">Loading...</div>
+
+    <button onclick="getBitcoinPrice()">Refresh Price</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
